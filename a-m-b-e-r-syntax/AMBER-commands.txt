@@ -1,0 +1,37 @@
+Notes:
+[] indicates a value/parameter, the brackets are not included in the code
+() encapsulate text/variables/comments, they are included in the code
+
+AMBER commands
+
+title (title)
+comment (message)
+!
+wait [time in seconds] or wait [mintes:seconds] or wait [hours:minutes:seconds]
+waituntil [time of day] or waituntil [time of day, day of the week]
+waituntil ([low limit] < [temp loop] < [high limit]) [time in seconds]
+waitup (message)
+layer [material] [thickness] or l [material] [thickness]
+layer [material]=[user variable name] or l [material]=[user variable name]
+time [material] [time]
+open [shutter1],[shutter2],[shutter3],...
+close [shutter1],[shutter2],[shutter3],...
+structure (name) or s (name)
+es
+repeat [integer]
+er
+rate [rate name] [growth rate] or gr [rate name] [growth rate]
+rate [rate name]=[user variable name] or gr [rate name]=[user variable name]
+temp [cell] [setpoint] or t [cell] [setpoint] or temp [cell] [setpoint] [rampe rate] or t [cell] [setpoint] [ramprate]
+temp [cell]=[user variable name] or t [cell]=[user variable name]
+setparameter [parameter name] [loop name] [value to send]
+setparameter [parameter name] [loop name]=[user variable name]
+eval [variable name]=expression
+writefile ([filename]; arg1, arg2, arg3, ...) or wfile ([filename]; arg1, arg2, arg3,...)
+ask [user variable name] (comment for user)
+fitexp (temp1, temp2, temp3, ..., tempn; flux 1, flux2, flux3,...fluxn; var1, var2)
+writevalue [instrument name] [numeric value]
+writetext [instrument name] [text string]
+plugin [plugin name] ([parameter 1] [value 1]; [paramete 2] [value 2];...)
+plugin [parameter name] ([parameter 1]=[user variable name])
+email (recipients email address; "subject line", "body")

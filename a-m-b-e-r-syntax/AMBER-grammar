@@ -1,0 +1,19 @@
+1  {  scopeName = 'text.html.amber';
+2     fileTypes = (.amber);
+3     foldingStartMarker = 'structure|s|repeat';
+4     foldingStopMarker = 'es|er';
+5     patterns = (
+6        {  name = 'keyword.control.untitled';
+7           match = '\b(if|while|for|return)\b';
+8        },
+9        {  name = 'string.quoted.double.untitled';
+10           begin = '"';
+11           end = '"';
+12           patterns = (
+13              {  name = 'constant.character.escape.untitled';
+14                 match = '\\.';
+15              }
+16           );
+17        },
+18     );
+19  }
